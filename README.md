@@ -1,4 +1,4 @@
-
+# Hello, I succesfully ran "./bin/hello" :)
 # 📘 C Programming – 5-Week Course Syllabus
 
 This 5-week course introduces core concepts of the C programming language.  
