@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /*
     Task:
@@ -13,7 +14,13 @@
 
 int is_prime(int n) {
     // TODO: check if n is prime using loop up to sqrt(n)
-    return 0; // placeholder
+    int sqrtn = sqrt(n);
+    for (int i = 2; i <= sqrtn; i++) {
+        if (n % i == 0){
+            return 0;
+        }
+    }
+    return 1;
 }
 
 int main(void) {
@@ -23,6 +30,14 @@ int main(void) {
     scanf("%d", &n);
 
     // TODO: validate input and print all primes up to n
-
+    if (n < 2){
+        printf("ERROR: n must be at least 2! \n");
+    } else {
+        for (int i = 2; i <= n; i++){
+            if (is_prime(i)){
+                printf("%d\n", i);
+            }
+        }
+    }
     return 0;
 }
