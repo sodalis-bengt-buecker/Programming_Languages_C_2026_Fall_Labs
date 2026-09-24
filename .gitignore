@@ -10,6 +10,7 @@ bin/
 .vscode/ipch
 .vscode/.browse*
 .vscode/*.db
+.vscode/
 
 # OS
 .DS_Store

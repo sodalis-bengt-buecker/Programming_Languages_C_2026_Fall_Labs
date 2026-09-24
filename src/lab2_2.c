@@ -31,7 +31,7 @@ int main(void) {
         printf("ERROR: n must be a non-negative integer!\n");
     } else {
         long long result = factorial(n);
-        printf("The factorial of %d is %lu\n", n, result);
+        printf("The factorial of %d is %llu\n", n, result);
     }
 
     return 0;
